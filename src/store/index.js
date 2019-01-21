@@ -1,17 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex';
+import Cat from './Modules/Cat.js'
 
 Vue.use(Vuex);
-const state = {
-    showFooter: true,
-    changeableNum: 0
-};
-const getters = {
-    isShow(state) {
-        return state.showFooter
-    },
-    getChangedeNum: (state) => (state.changeableNum)
-}
-const store = new Vuex.Store({state, getters});
+const store = new Vuex.Store({modules: {Cat}});
 
 export default store;

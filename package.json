@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "start": "set PORT=7000&&vue-cli-service serve --open",
+    "serve": "set PORT=7000&&vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "vue": "^2.5.21",
+    "vue-router": "^3.0.2",
     "vuex": "^3.1.0"
   },
   "devDependencies": {
